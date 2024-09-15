@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Commits</title>
+</head>
+<body>
+    <h1>Commits</h1>
+    <div th:each="commit : ${commits}">
+        <p th:text="${commit.message}"></p>
+    </div>
+</body>
+</html>
